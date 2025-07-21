@@ -1,0 +1,170 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-patterns
+
+# _posts/2017-11-27-macros.md
+^\s*\d+:\s\S*?[()]L\S+$
+
+<notextile>.*?</notextile>
+
+^.*Zaugg.*
+
+\*[A-Z]\*[a-z]+
+<i>\w</i>\w+
+
+^\s+\d+(\s+[-.'\w]+)+
+
+`@\w+`
+
+/resources/img/[-/.\w]+
+
+^\[[^#\]]{4,}\]:(?= https://github)
+
+\sthat that\s(?!`)
+
+# ambassadors.yml
+^#?\s+(?:bluesky|discord|github|twitter): [-\w]+
+
+_events/\d{4}-\d{2}-\d{2}-\w+
+
+# Automatically suggested patterns
+
+# hit-count: 4131 file-count: 571
+# https/http/file urls
+(?:\b(?:http[sx]?|ftp|file)://)[-A-Za-z0-9+&@#/*%?=~_|!:,.;]+[-A-Za-z0-9+&@#/*%=~_|]
+
+# hit-count: 3767 file-count: 208
+# GitHub SHAs (markdown)
+(?:\[`?[0-9a-f]+`?\]\(https:/|)/(?:www\.|)github\.com(?:/[^/\s"]+){2,}(?:/[^/\s")]+)(?:[0-9a-f]+(?:[-0-9a-zA-Z/#.]*|)\b|)
+
+# hit-count: 374 file-count: 47
+# Contributor
+\[[^\]]+\]\((?:mailto:[-a-zA-Z=;:/?%&0-9+@._]{3,}|https://github\.com/[^/\s"]+/?)\)
+
+# hit-count: 310 file-count: 109
+# Alternatively, if you're using check-spelling v0.0.25+, and you would like to _check_ the Non-English content for spelling errors, you can. For information on how to do so, see:
+# https://docs.check-spelling.dev/Feature:-Configurable-word-characters.html#unicode
+[a-zA-Z]*[ÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź][a-zA-Z]{3}[a-zA-ZÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź]*|[a-zA-Z]{3,}[ÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź]|[ÀÁÂÃÄÅÆČÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæčçèéêëìíîïðñòóôõöøùúûüýÿĀāŁłŃńŅņŒœŚśŠšŜŝŸŽžź][a-zA-Z]{3,}
+
+# hit-count: 263 file-count: 69
+# Compiler flags (Unix, Java/Scala)
+# Use if you have things like `-Pdocker` and want to treat them as `docker`
+(?:^|[\t ,>"'`=(#])-(?:(?:J-|)[DPWXY]|[L])(?=[A-Z]{2,}|[A-Z][a-z]|[a-z]{2,})
+
+# hit-count: 134 file-count: 16
+# scala modules
+("[^"]+"\s*%%?\s*){2,3}"[^"]+"
+
+# hit-count: 117 file-count: 46
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u\{?|[uU]\+|#x?|%23|&H)[0-9_a-fA-FgGrR]*?[a-fA-FgGrR]{2,}[0-9_a-fA-FgGrR]*(?:[uUlL]{0,3}|[iu]\d+)\b
+
+# hit-count: 82 file-count: 46
+# hex runs
+\b[0-9a-fA-F]{16,}\b
+
+# hit-count: 24 file-count: 10
+# Library prefix
+# e.g., `lib`+`archive`, `lib`+`raw`, `lib`+`unwind`
+# (ignores some words that happen to start with `lib`)
+(?:\b|_)[Ll]ib(?:re(?=office)|era(?![lt])|)(?!ero|er(?:ation|ty)|rar(?:i(?:an|es)|y))(?=[a-z])
+
+# hit-count: 16 file-count: 12
+# IServiceProvider / isAThing
+(?:(?:\b|_|(?<=[a-z]))I|(?:\b|_)(?:nsI|isA))(?=(?:[A-Z][a-z]{2,})+(?:[A-Z\d]|\b))
+
+# hit-count: 15 file-count: 12
+# oracle
+\bdocs\.oracle\.com/[-0-9a-zA-Z./_?#&=]*
+
+# hit-count: 13 file-count: 6
+# Markdown anchor links
+\(#\S*?[a-zA-Z]\S*?\)
+
+# hit-count: 9 file-count: 8
+# imports
+^import\s+(?:(?:static|type)\s+|)(?:[\w.]|\{\s*\w*?(?:,\s*(?:\w*|\*))+\s*\})+(?:\s+from (['"]).*?\g{-1}|)
+
+# hit-count: 9 file-count: 5
+# css fonts
+\bfont(?:-family|):[^;}]+
+
+# hit-count: 6 file-count: 3
+# Twitter status
+\btwitter\.com/[^/\s"')]*(?:/status/\d+(?:\?[-_0-9a-zA-Z&=]*|)|)
+
+# hit-count: 4 file-count: 4
+# Repeated letters
+\b([a-z])\g{-1}{2,}\b
+
+# hit-count: 4 file-count: 1
+# URL escaped characters
+%[0-9A-F][A-F](?=[A-Za-z])
+
+# hit-count: 3 file-count: 2
+# integrity
+integrity=(['"])(?:\s*sha\d+-[-a-zA-Z=;:/0-9+]{40,})+\g{-1}
+
+# hit-count: 3 file-count: 1
+# GitHub actions
+\buses:\s+(['"]?)[-\w.]+/[-\w./]+@[-\w.]+\g{-1}
+
+# hit-count: 3 file-count: 1
+# PGP
+\b(?:[0-9A-F]{4} ){9}[0-9A-F]{4}\b
+
+# hit-count: 2 file-count: 2
+# copyright
+Copyright (?:\([Cc]\)|)(?:[-\d, ]|and)+(?: [A-Z][a-z]+ [A-Z][a-z]+,?)+
+
+# hit-count: 1 file-count: 1
+# pom.xml
+<(?:group|artifact)Id>.*?<
+
+# hit-count: 1 file-count: 1
+# Windows short paths
+[/\\][^/\\]{5,6}~\d{1,2}(?=[/\\])
+
+# Questionably acceptable forms of `in to`
+# Personally, I prefer `log into`, but people object
+# https://www.tprteaching.com/log-into-log-in-to-login/
+\b(?:(?:[Ll]og(?:g(?=[a-z])|)|[Ss]ign)(?:ed|ing)?) in to\b
+
+# to opt in
+\bto opt in\b
+
+# pass(ed|ing) in
+\bpass(?:ed|ing) in\b
+
+# acceptable duplicates
+# ls directory listings
+[-bcdlpsw](?:[-r][-w][-SsTtx]){3}[\.+*]?\s+\d+\s+\S+\s+\S+\s+[.\d]+(?:[KMGT]|)\s+
+# mount
+\bmount\s+-t\s+(\w+)\s+\g{-1}\b
+# C types and repeated CSS values
+\s(auto|buffalo|center|div|inherit|long|LONG|none|normal|null|solid|thin|transparent|very)(?:\s\g{-1})+\s
+# C enum and struct
+\b(?:enum|struct)\s+(\w+)\s+\g{-1}\b
+# go templates
+\s(\w+)\s+\g{-1}\s+\`(?:graphql|inject|json|yaml):
+# doxygen / javadoc / .net
+(?:[\\@](?:brief|defgroup|groupname|link|t?param|return|retval)|(?:public|private|\[Parameter(?:\(.+\)|)\])(?:\s+(?:static|override|readonly|required|virtual))*)(?:\s+\{\w+\}|)\s+(\w+)\s+\g{-1}\s
+
+# macOS file path
+(?:Contents\W+|(?!iOS)/)MacOS\b
+
+# Python package registry has incorrect spelling for macOS / Mac OS X
+"Operating System :: MacOS :: MacOS X"
+
+# "company" in Germany
+\bGmbH\b
+
+# IntelliJ
+\bIntelliJ\b
+
+# Commit message -- Signed-off-by and friends
+^\s*(?:(?:Based-on-patch|Co-authored|Helped|Mentored|Reported|Reviewed|Signed-off)-by|Thanks-to): (?:[^<]*<[^>]*>|[^<]*)\s*$
+
+# Autogenerated revert commit message
+^This reverts commit [0-9a-f]{40}\.$
+
+# ignore long runs of a single character:
+\b([A-Za-z])\g{-1}{3,}\b

@@ -1,0 +1,8 @@
+comonads
+consing
+curating
+github
+https
+ssh
+ubuntu
+workarounds
