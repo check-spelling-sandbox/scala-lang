@@ -102,7 +102,7 @@ implicit object ProjectAs extends HitReader[Project] {
                 beginnerIssues = searchHits
                   .getHits()
                   .map { hit =>
-                    nread[GithubIssue](hit.getSourceAsString)
+                    nread[GitHubIssue](hit.getSourceAsString)
                   }
                   .toList
               )
@@ -129,9 +129,9 @@ With GitHub's REST API, you have to make multiple requests to different routes t
 
 So I replaced keywords with topics for projects in Scaladex and used GitHub’s new GraphQL API to fetch the topics. These topics are fetched for all projects when the server is indexed. A lot more projects have topics than keywords (which had to manually be set by maintainers in Scaladex), so this greatly improved the ability to search for projects based on categories in Scaladex since there are a lot more projects with categories.
 
-Here's the code I added to [GithubDownload.scala](https://github.com/scalacenter/scaladex/commit/a771d7a70fdb7aaa0003abf48aaa87a622d89f03#diff-e03c541cf1bd7ec0322a9a6571160bebR339) which contains the GraphQL query that is put in the POST body of the request sent to GitHub's GraphQL API to fetch topics for a project. You can see the graph-structure of GraphQL in the query. The query first gets a `repository` node and then accesses its topics through the `repositoryTopics` edge/connection. Then it selects the names of the topics belonging to that repository.
+Here's the code I added to [GitHubDownload.scala](https://github.com/scalacenter/scaladex/commit/a771d7a70fdb7aaa0003abf48aaa87a622d89f03#diff-e03c541cf1bd7ec0322a9a6571160bebR339) which contains the GraphQL query that is put in the POST body of the request sent to GitHub's GraphQL API to fetch topics for a project. You can see the graph-structure of GraphQL in the query. The query first gets a `repository` node and then accesses its topics through the `repositoryTopics` edge/connection. Then it selects the names of the topics belonging to that repository.
 ```
-private def topicQuery(repo: GithubRepo): JsObject = {
+private def topicQuery(repo: GitHubRepo): JsObject = {
 
   val query =
     """
