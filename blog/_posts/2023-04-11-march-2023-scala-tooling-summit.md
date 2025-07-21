@@ -337,7 +337,7 @@ inline](https://github.com/VirtusLab/scala-cli/issues/1971).
 
 ## What comes next?
 
-Overall, we consider the summit a success. With positive feedback from
+Overall, we consider the summit to be a success. With positive feedback from
 participants and movement already visible on the topics above, we feel confident
 that these efforts will result in a more stable, feature-rich, and unified
 tooling ecosystem. The Scala Center will be continuing to facilitate and plan
