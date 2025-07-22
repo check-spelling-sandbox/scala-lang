@@ -40,10 +40,10 @@ The Scala Center has been carefully documenting all the cases brought to our att
 If you see a fraudulent domain, the following are the things you can do:
 
 - Report them at the DNS level proved helpful - they get blocked fairly quickly. You can use [who.is](https://who.is/) to find the DNS provider of a domain by looking at its NS record. Then, you can complain to that provider. For example, we reported several domains to [Dynadot](https://www.dynadot.com/report-abuse) via their abuse report system.
-- Report the fraud to your local law enforcement. The more such reports they get, the more likely they are to prioritise the issue. If you are a victim and have revealed your identity documents to the scammers, it is especially important that you seek help from your law enforcement, as the leaked documents may be used by the scammers to impersonate you.
-- Report the fraud to the companies the scammers impersonate.
+- Report the fraud to your local law enforcement. The more such reports they get, the more likely they are to prioritize the issue. If you are a victim and have revealed your identity documents to the scammers, it is especially important that you seek help from your law enforcement, as the leaked documents may be used by the scammers to impersonate you.
+- Report the fraud to the companies that the scammers are impersonating.
 - Stay informed via the Scala Center's official channels. Also, coordinate with your local community, e.g., the Scala's Indian community made a [thread](https://www.reddit.com/r/developersIndia/comments/1axvs2p/new_scam_alert_guys_it_is_a_massive_elaborate/)  on Reddit where they discuss the issue.
 
-As this is an ongoing incident, please stay vigilant. You can read the previous article on the matter, which contains some useful tips on how to detect the scam [here](https://scala-lang.org/blog/2024/03/01/fake-scala-courses.html).
+As this is an ongoing incident, please stay vigilant. You can read the [previous article on the matter](https://scala-lang.org/blog/2024/03/01/fake-scala-courses.html) which contains some useful tips on how to detect the scam.
 
 We would also like to extend our empathy to those who suffered from this scam. It is truly unfortunate that Scala itself got pulled in this elaborate scam. We would like to remind everyone that Scala is an open source language and that all Scala MOOCs produced and maintained by the Scala Center and EPFL employees are [available for free](https://docs.scala-lang.org/online-courses.html). And finally, whereas today Scala is targeted, tomorrow it can be another technology. Keep your eyes open and stay safe. 🙏

@@ -42,10 +42,9 @@ Conclusions are open to interpretation, which is why we offer full
 access to our methodology and data, so feel free to make your own and share it with us.
 
 ## 1 - About the Survey
-The survey had a simple design:
+The [survey](https://docs.google.com/forms/d/e/1FAIpQLSflVmTu9lhrtnSTh2tKAjUGrt3WvEgwlDqZg66O3EVSXd1aJg/viewform) had a simple design:
 - A total of 4 questions and a free field at the end
 - Each question contained a “closed” and an “open” part
-  Please check what it looks like [here](https://docs.google.com/forms/d/e/1FAIpQLSflVmTu9lhrtnSTh2tKAjUGrt3WvEgwlDqZg66O3EVSXd1aJg/viewform).
 
 The survey questions focused on Scala 3 features, tooling, migration, and communication.
 We chose this format for several reasons:
@@ -79,7 +78,7 @@ With all that said, our approach to analyse the results is as follows:
 - Presenting the quantifiable data
 - Categorizing comments to provide further insight into the topics discussed; 
   the purpose of the comment, such as: ‘advice’, ‘concern’, ‘request’; 
-  overall tone: either positive or negative; to prioritise what needs addressing/fixing 
+  overall tone: either positive or negative; to prioritize what needs addressing/fixing 
   before RC1 or at later time, e.g. ‘critical’ or ‘good to have’.
 - Cross-referencing comments with other sources on the same topic.
 - Finally, creating a list of important topics that need to be addressed.
@@ -104,7 +103,7 @@ with 28.2% Neutral responses being the smallest proportion of answered responses
 
 #### Potential issues with the poll
 In hindsight, we should have requested feedback directly about generic tuples in Scala 3. 
-Otherwise, their excitement can not be judged separately from the utility they bring 
+Otherwise, their excitement cannot be judged separately from the utility they bring 
 to features such as Typeclass Derivation, Match Types, and Inline.
 
 #### Comments From Participants
@@ -216,8 +215,7 @@ compiler options. However we received 7 requests for the `-Xlint` options,
 
 ### Communication
 ![Communication result survey](/resources/img/blog/scala-3-developers-preview-survey-results/communication-survey.svg)
-We asked participants the question “How frequently do you use the following c
-ommunication channels to stay up-to-date on the latest changes in Scala?”, 
+We asked participants the question “How frequently do you use the following communication channels to stay up-to-date on the latest changes in Scala?”, 
 the results of which are displayed in the above chart. It is sorted in descending 
 order based on the total counts for the Very Often and Often responses.
 

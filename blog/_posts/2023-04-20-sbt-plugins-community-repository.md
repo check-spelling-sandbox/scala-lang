@@ -15,17 +15,17 @@ Update: we have announced our action plan on the [Contributors Forum](https://co
 
 On the 7th of April 2023, many projects of the Scala ecosystem could not resolve
 sbt plugins from the community repository `repo.scala-sbt.org` anymore (examples
-[here](https://github.com/sbt/sbt-dynver/issues/239#issuecomment-1499791434),
-[here](https://github.com/playframework/playframework/issues/11675#issuecomment-1499869916),
-[here](https://github.com/sbt/sbt/issues/7204), and
-[here](https://github.com/spray/sbt-revolver/issues/112)).
+[sbt/sbt-dynver#239](https://github.com/sbt/sbt-dynver/issues/239#issuecomment-1499791434),
+[playframework/playframework#11675](https://github.com/playframework/playframework/issues/11675#issuecomment-1499869916),
+[sbt/sbt#7204](https://github.com/sbt/sbt/issues/7204), and
+[spray/sbt-revolver#112](https://github.com/spray/sbt-revolver/issues/112)).
 
 ## Retrospective
 
 To understand what happened, here is some background information. sbt plugins are packaged
 as modules published to Ivy or Maven repositories. Historically, sbt plugins used to be
 published primarily to the sbt community repository hosted on Bintray. However, in 2021,
-JFrog [sunsetted the Bintray
+JFrog [sunset the Bintray
 service](https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/).
 Since then, JFrog has provided the Scala Center a cloud-hosted Artifactory instance for free.
 As explained in the [release notes of sbt

@@ -20,7 +20,7 @@ discussed.
 
 The SIP committee went through five SIPs in the queue. Two new SIPs received a
 number, meaning they passed the first phase of acceptance – that is, the change
-to Scala is accepted in theory, so long as the the committee's design and
+to Scala is accepted in theory, so long as the committee's design and
 implementation concerns can be adequately addressed in subsequent discussions on
 the SIP. The two SIPs which received numbers (first-round accepted) include:
 
@@ -57,7 +57,5 @@ in and ask questions to the SIP committee, and have them answered live! You can
 even watch [past SIP meetings](https://plus.google.com/+ScalaProcess) at any
 time!
 
-Check out the full meeting minutes from the July 13 SIP meeting
-[here](https://docs.scala-lang.org/sips/minutes/2016-07-15-sip-minutes.html), or watch the
-video of the meeting
-[here](https://plus.google.com/events/c11vhomo86lkejevfkrm6uls900).
+Check out the [full meeting minutes from the July 13 SIP meeting](https://docs.scala-lang.org/sips/minutes/2016-07-15-sip-minutes.html), or watch [the
+video of the meeting](https://plus.google.com/events/c11vhomo86lkejevfkrm6uls900).

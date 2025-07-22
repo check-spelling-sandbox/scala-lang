@@ -22,7 +22,7 @@ As an organization, Spotify's dedication to open source has been clear since its
 
 Our interviewee, Michel, was attracted to Spotify precisely because of its fervent open source culture. In recent times, the company has professionalized its open source initiatives by creating the Free and Open Source Software board (FOSS board). It aims to promote good practices and citizenship within the open source community, assist in legal/business issues and ensure the delivery of high-quality software. This step is part of Spotify's shift towards prioritizing quality over quantity in its open source contributions. The company's dedication to supporting the open source ecosystem extends beyond its walls with the launch of the [FOSS Fund](https://engineering.atspotify.com/2023/10/announcing-the-recipients-of-the-2023-spotify-foss-fund/). This fund is dedicated to financially support the maintainers of independent projects. This ambitious initiative is aimed at nurturing a more sustainable open source ecosystem for everyone to benefit from.
 
-In addition, Spotify has a dedicated page showcasing all its [open source projects](https://spotify.github.io/). They also actively share updates and progress through blog posts and have established mechanisms to gauge the quality of their projects, such as tracking the repository activity, known vulnerabilities and the community interest with star ratings on Github.
+In addition, Spotify has a dedicated page showcasing all its [open source projects](https://spotify.github.io/). They also actively share updates and progress through blog posts and have established mechanisms to gauge the quality of their projects, such as tracking the repository activity, known vulnerabilities and the community interest with star ratings on GitHub.
 
 Join us as we explore deeper into Spotify's journey and its symbiotic relationship with the open source world. We'd like to share some of Spotify's own experiences - the highs and the lows - of contributing to the Scala ecosystem.
 
@@ -92,7 +92,7 @@ Spotify's effective engagement with the Scala ecosystem and open source communit
 
 We encourage you to contribute to the growing Scala ecosystem and share your unique insights. Embrace the open source philosophy, learn from the journeys of others, and start making your own impact today. Remember, every positive contribution, no matter how small, is a step forward in this collaborative journey. Let's shape the future of Scala together!
 
-Share your contribution story [here](https://airtable.com/shr5mUxTqQs1zZ228)!
+Share your contribution story in the [Scala Open Source Sustainability Interview](https://airtable.com/shr5mUxTqQs1zZ228)!
 
 ## Related Content and Further Reading
 
